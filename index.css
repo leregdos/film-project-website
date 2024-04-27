@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+
+body {
+  font-family: "Cutive Mono", serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 0%;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+.heart {
+  width: 1.5rem;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secret_message {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  max-width: 90%;
+}
+
+.start {
+  width: 2.5rem;
+  padding: 0.5rem;
+}
+
+.secchild {
+  animation: myslide;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+
+@keyframes myslide {
+  50% {
+    color: rgb(209, 4, 100);
+  }
+}
+
+.start img {
+  border-style: solid;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 0px rgb(209, 4, 100);
+  animation: myslide2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myslide2 {
+  50% {
+    box-shadow: 0px 0px 0px rgb(209, 4, 100);
+  }
+}
+
+.start img:focus {
+  animation: myslide3; /*use tabindex="0" attribute in css to focus on img. focus used to change state onclick.*/
+  box-shadow: 5px 5px 0px rgb(160, 142, 118);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
